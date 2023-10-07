@@ -7,6 +7,7 @@ const JUMP_VELOCITY = -400.0
 
 func _physics_process(delta):
 	var direction = Vector2.ZERO
+	
 
 	if Input.is_action_pressed("ui_right"):
 		direction.x += 1
@@ -31,3 +32,5 @@ func _physics_process(delta):
 	velocity = direction * SPEED
 
 	move_and_slide()
+
+
